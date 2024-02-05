@@ -25,7 +25,9 @@
             {% for project in site.projects limit:include.limit %}
                 <div class="portfolio-item graphic-design">
                     <div class="he-wrap tpl6">
-                        <h3 class="a1">{{ project.title }}</h3>
+                        <div>
+                            <h3 class="a1">{{ project.title }}</h3>
+                        </div>
                         <div class="he-view">
                             <div class="bg a0" data-animate="fadeIn">
                                 <a href="{{  project.url | prepend: site.baseurl }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
