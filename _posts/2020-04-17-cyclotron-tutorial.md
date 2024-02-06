@@ -12,7 +12,7 @@ This tutorial illustrates how to create on Cyclotron a dashboard with the follow
 - processing and/or combining different datasources with JavaScript
 - geospatial data on an interactive map
 - encryption of sensitive data within the configuration.
-
+<!--more-->
 The main dataset used represents the spread of Covid-19 desease across Italy and is made available by the Civil Protection Department on the following repository: [https://github.com/pcm-dpc/COVID-19](https://github.com/pcm-dpc/COVID-19). The other sources used are:
 
 - administrative borders of the Italian regions, provided by [https://gist.github.com/datajournalism-it](https://gist.github.com/datajournalism-it)

@@ -7,7 +7,7 @@ author: alberto.carotti
 description: "This article provides a guide for beginners to Apache NiFi, explaining what the software is about and guiding the user through its basic features and interface."
 ---
 This article provides a guide for beginners to Apache NiFi, explaining what the software is about and guiding the user through its basic features and interface.
-
+<!--more-->
 If you would like to jump straight to a tutorial on how to use NiFi for a real use case, you can do it [here](https://scc-digitalhub.github.io/platform/nifi-tutorial-gtfs/).
 
 ## Table of contents

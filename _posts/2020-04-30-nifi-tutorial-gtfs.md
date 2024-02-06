@@ -7,7 +7,7 @@ author: alberto.carotti
 description: "This tutorial provides a step-by-step guide on how to use Apache NiFi for a simple, but realistic use case."
 ---
 This tutorial provides a step-by-step guide on how to use Apache NiFi for a simple, but realistic use case.
-
+<!--more-->
 ## Table of contents
 
 * [Requirements](#requirements)
