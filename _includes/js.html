@@ -25,7 +25,7 @@
 	var $container = $('.portfolio'),
 		$items = $container.find('.portfolio-item'),
 		portfolioLayout = 'fitRows', 
-		gutterWidth = 5;
+		gutterWidth = 20;
 		
 		if( $container.hasClass('portfolio-centered') ) {
 			portfolioLayout = 'masonry';
@@ -41,7 +41,7 @@
 			queue: false
 		},
 		masonry: {
-			gutter: gutterWidth
+			gutterWidth: gutterWidth
 		}
 		}, refreshWaypoints());
 		
@@ -82,7 +82,7 @@
 			totalGutter = gutterWidth * (columnNumber - 1), 
 			winWidthWithoutGutter = winWidth - totalGutter, 
 			itemWidth = Math.floor(winWidthWithoutGutter / columnNumber);
-				
+
 			$container.find('.portfolio-item').each(function() { 
 				$(this).css( { 
 					width : itemWidth + 'px' 
