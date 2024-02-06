@@ -41,7 +41,6 @@
 			queue: false
 		},
 		masonry: {
-			gutterWidth: gutterWidth
 		}
 		}, refreshWaypoints());
 		
@@ -85,7 +84,8 @@
 
 			$container.find('.portfolio-item').each(function() { 
 				$(this).css( { 
-					width : itemWidth + 'px' 
+					width : itemWidth + 'px', 
+					margin : '0 ' + gutterWidth/2 + 'px'
 				});
 			});
 		}
