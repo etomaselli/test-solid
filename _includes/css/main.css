@@ -273,7 +273,7 @@ a:focus {
 	display:block;
 }
 
-.portfolio-item {background-color: white;}
+.portfolio-item {background-color: white; padding: 20px}
 .portfolio-item .title:before {border-radius:0; display:none}
 .portfolio-item p {margin:0px 0 30px;}
 .portfolio-item h3 {font-size:16px; text-transform:uppercase; color: {{ site.colors.secondary }} !important;}
