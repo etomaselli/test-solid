@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "AZURE BATCH - Project inDICEs"
-date:   2020-10-13 15:50:00 +0200
+date:   2020-10-13 16:50:00 +0200
 categories: platform
 author: mmartini
 description: "InDICEs is a research project that aims to empower policy-makers and decision-makers in the Cultural and Creative Industries to fully understand the social and economic impact of digitisation in their sectors and address the need for innovative (re)use of cultural assets."
