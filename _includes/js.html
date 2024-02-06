@@ -25,6 +25,7 @@
 	var $container = $('.portfolio'),
 		$items = $container.find('.portfolio-item'),
 		portfolioLayout = 'fitRows';
+		gutterWidth = 5;
 		
 		if( $container.hasClass('portfolio-centered') ) {
 			portfolioLayout = 'masonry';
@@ -40,7 +41,7 @@
 			queue: false
 		},
 		masonry: {
-			gutter: 10
+			gutter: gutterWidth
 		}
 		}, refreshWaypoints());
 		
@@ -74,14 +75,16 @@
 			}
 				return columnNumber;
 			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
+
+		function setColumns() {
+			var winWidth = $(window).width(), 
+			columnNumber = getColumnNumber(), 
+			totalGutter = gutterWidth * (columnNumber - 1), 
+			winWidthWithoutGutter = winWidth - totalGutter, 
+			itemWidth = Math.floor(winWidthWithoutGutter / columnNumber);
 				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
+			$container.find('.portfolio-item').each(function() { 
+				$(this).css( { 
 					width : itemWidth + 'px' 
 				});
 			});

@@ -19,7 +19,7 @@
         </div>
     </div> -->
 
-    <div>
+    <div class="portfolio-container">
         {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
         <div class="recentitems portfolio portfolio-centered">
             {% for project in site.projects limit:include.limit %}
