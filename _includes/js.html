@@ -78,14 +78,14 @@
 		function setColumns() {
 			var winWidth = $(window).width(), 
 			columnNumber = getColumnNumber(), 
-			totalGutter = gutterWidth * (columnNumber - 1), 
+			totalGutter = gutterWidth * columnNumber, 
 			winWidthWithoutGutter = winWidth - totalGutter, 
 			itemWidth = Math.floor(winWidthWithoutGutter / columnNumber);
 
 			$container.find('.portfolio-item').each(function() { 
 				$(this).css( { 
 					width : itemWidth + 'px', 
-					margin : '0 ' + gutterWidth/2 + 'px'
+					margin : '0 ' + gutterWidth/2 + 'px 20px'
 				});
 			});
 		}
